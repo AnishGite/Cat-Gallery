@@ -1,0 +1,261 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<div class='card shadow mainecoon'>
+	<input type='checkbox' id='modal-1'>
+	<div class='circle shadow'>
+	<label for='modal-1' class='rotatePlus' title="Read more...">-</label>
+	</div>
+	<h2>Maine Coon</h2>
+	<p>The Maine Coon is a large domesticated cat breed. One of the oldest natural breeds in North America, the breed originated in the U.S. state of Maine, where it is the official state cat.The Maine Coon is a large and social cat, commonly referred to as "the gentle giant.</p>
+	<div class='tags'>
+		<i class="fas fa-tag"></i>
+		<a href='#'class="tag">Largest Cat</a>
+		<a href='#'class="tag">Gentle Giant</a>
+		<a href='#'class="tag">Folk Tale Myths</a>
+	</div>
+</div>
+<div class='card shadow britishshorthair'>
+	<input type='checkbox' id='modal-2'>
+	<div class='circle shadow'>
+	<label for='modal-2' class='rotatePlus' title="Read more...">-</label>
+	</div>
+	<h2>British Shorthair</h2>
+	<p>The British Shorthair is the pedigreed version of the traditional British domestic cat, with a distinctively stocky body, thick coat, and broad face. The most familiar colour variant is the "British Blue", with a solid grey-blue coat, pineapple eyes, and a medium-sized tail.</p>
+	<div class='tags'>
+		<i class="fas fa-tag"></i>
+		<a href='#'class="tag">British Blue</a>
+		<a href='#'class="tag">Pineapple Eyes</a>
+		<a href='#'class="tag">Alice In the Wonderland</a>
+		<a href='#'class="tag">Cheshire Cat</a>
+	</div>
+</div>
+<div class='card shadow persiancat'>
+	<input type='checkbox' id='modal-3'>
+	<div class='circle shadow'>
+	<label for='modal-3' class='rotatePlus' title="Read more...">-</label>
+	</div>
+	<h2>Persian Cat</h2>
+	<p>The Persian cat, also known as the Persian Longhair, is a long-haired breed of cat characterised by a round face and short muzzle. The first documented ancestors of Persian cats might have been imported into Italy from Khorasan as early as around 1620, however, this has not been proven. Instead, there is stronger evidence for a longhaired cat breed being exported from Iran from the 19th century onwards.</p>
+	<div class='tags'>
+		<i class="fas fa-tag"></i>
+		<a href='#'class="tag">Long Hair</a>
+		<a href='#'class="tag">Short Muzzle</a>
+		<a href='#'class="tag">4th most popular cat</a>
+		<a href='#'class="tag">Favorite</a>
+	</div>
+</div>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	color: black;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	display: flex;
+	flex-direction:column;
+	width: 320px;
+	height: 400px;
+	margin: 32px;
+	justify-content: center;
+	align-items: center;
+/* 	background: url(); */
+	background-size:cover;
+	border-radius: 16px;
+	position:relative;
+	overflow: hidden;
+}
+.mainecoon {
+	background-image: url('https://www.katdootje.nl/wp-content/uploads/kartierr_Maincoon_cat_very_clear_eyes_ultra_realistic_in_a_gian_1a6833b6-35d2-43bf-9cc0-6bc4d1898999.png');
+}
+.britishshorthair {
+	background-image: url('https://i.etsystatic.com/22411396/r/il/484e7f/2330250279/il_fullxfull.2330250279_l28z.jpg');
+}
+.persiancat {
+	background-image: url('https://moderncat.com/wp-content/uploads/2024/05/Fluffiest_AS_29287526_Eric-Isselée.jpg');
+}
+
+.shadow {
+	box-shadow: 0px 1.5px 5px rgba(24,24,24, 0.046),
+							0px 4px 15.8px rgba(24,24,24, 0.057),
+							0px 8.4px 30.2px rgba(24,24,24, 0.059),
+							0px 15.9px 46.8px rgba(24,24,24, 0.066),
+							0px 30.7px 64.6px rgba(24,24,24, 0.084),
+							0px 84px 80px rgba(24,24,24, 0.12);
+}
+input[id^='modal'] {
+	display: none;
+}
+.circle {
+	font-size:50px;
+	font-weight: normal;
+	color: rgba(98,0,238,1);
+	display: flex;
+	width: 40px;
+	height: 40px;
+	padding: 1px 0 0 1px;
+	background: rgba(3,218,197,.9);
+	border-radius: 10000px;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s all cubic-bezier(.7,0,.3,1);
+	position: absolute;
+	bottom:10px;
+	right:10px;
+}
+.circle:hover {
+	background: rgba(2,176,168,1);
+}
+.card > h2{
+	font-size:20px;
+	color: #000;
+	position: absolute;
+	top:20px;
+	left:20px;
+	z-index: 999;
+	transition: 0.4s all cubic-bezier(.7,0,.3,1);
+}
+.mainecoon > h2,
+.persian cat > h2 {
+	color: #fff;
+}
+.card > p{
+	display: block;
+	position: absolute;
+	top: 72px;
+	font-size:15px;
+	color: #fff;
+	margin-top: 20px;
+	padding: 0px 20px 20px;
+	opacity: 0;
+	z-index: 999;
+	transition: 0.2s all cubic-bezier(.7,0,.3,1);
+	line-height: 1.5;
+	pointer-events: none;
+/* 	max-height: 250px; */
+/* 	background: #ccc; */
+	
+}
+.tags {
+	z-index: 988;
+	font-size:11px;
+	color:#fff;
+	position: absolute;
+	top:60px;
+	left:270px;
+	width: 500px;
+	height: 25px;
+	/*overflow: hidden;*/
+	opacity: 0;
+	transform: translateX(0);
+	transition: .4s all cubic-bezier(1,-0.1,0,1.1);
+}
+.fas{
+	margin: 0 5px 0 0;
+}
+a.tag:link{
+	color:#fff;
+	height: 19px;
+	box-sizing:border-box;
+	display: inline-block;
+	background-color: rgba(0,0,0,.3);
+	padding: 2px 9px;
+	margin: 0 2px 0 0;
+	border-radius:15px;
+	text-decoration:none;
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+	
+}
+input[id^='modal']:checked ~ h2{
+	color:#fff;
+	transition: 0.4s all cubic-bezier(.7,0,.3,1);
+}
+input[id^='modal']:checked ~ p{
+	opacity: 1;
+	transition: 0.2s all cubic-bezier(.7,0,.3,1) 0.2s;
+}
+input[id^='modal']:checked + .circle {
+	color: rgba(3,218,197,1);
+	width: 1500px;
+	height: 1500px;
+	background: rgba(98,0,238,.75);
+	transition: 0.4s all cubic-bezier(.7,0,.3,1);
+	bottom:-720px;
+	right:-720px;
+}
+.rotatePlus {
+	transform: rotate(0deg);
+	transition: .4s transform cubic-bezier(.7,0,.3,1);
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+.rotatePlus:hover {
+	animation: hoverPlus .2s 3 ease-in-out;
+}
+input[id^='modal']:checked ~ .circle > .rotatePlus {
+	transform: rotate(945deg);
+	transition: .4s transform cubic-bezier(.7,0,.3,1);
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+input[id^='modal']:checked ~ .circle > .rotatePlus:hover {
+	animation: hoverPlusActive .2s 3 ease-in-out;
+}
+input[id^='modal']:checked ~ .tags {
+	opacity: 1;
+	transform: translateX(-250px);
+	transition: .4s all cubic-bezier(1,-0.1,0,1.1);
+}
+input[id^='modal']:checked ~ .tags>a.tag:hover {
+	transition: .2s all ease-in-out;
+	color:#000;
+	font-weight: bold;
+	background-color: #03DAC3;
+	box-shadow: 0px 0px 7px 3px rgba(3,218,197,0.2);
+}
+.tags>a.tag:visited{
+	color:#fff;
+}
+
+@keyframes hoverPlus { 
+	0% {
+			transform: rotate(0deg);
+	}
+	25% {
+			transform: rotate(-5deg);		
+	}
+	75% {
+			transform: rotate(5deg);		
+	}
+}
+
+@keyframes hoverPlusActive { 
+	0% {
+			transform: rotate(945deg);
+	}
+	25% {
+			transform: rotate(940deg);		
+	}
+	75% {
+			transform: rotate(950deg);		
+	}
+{ background-color: #b8b4b4;
+
+}
+</style>
+</head>
